@@ -7,12 +7,12 @@
 * Return: a pointer to an array of strings, or NULL on failure
 */
 
-char **strtow(char *str, char *d)
+char **strtow(char *str, char d)
 {
-int i, j, k, m, numwords = 0;
-char **s;
+int i, j = 0, k = 0, m, numwords = 0;
+char **s = NULL;
 
-if (str == NULL || str[0] == 0)
+if (str == NULL || str[0] == '\0')
 return (NULL);
 if (!d)
 d = " ";
