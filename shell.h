@@ -149,7 +149,11 @@ char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
 
 /* toem_tokenizer.c */
+<<<<<<< HEAD
 char **strtow(char *, char *d);
+=======
+char **strtow(char *, char);
+>>>>>>> 98eb9305d3c944cad2f85f8dd0a6720a81c5c60c
 char **strtow2(char *, char);
 
 /* toem_realloc.c */
