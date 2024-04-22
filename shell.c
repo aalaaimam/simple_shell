@@ -8,7 +8,7 @@
 #define MAX_COMMAND_LENGTH 1024
 
 /**
-* main - Entry point for the simple shell program
+* shell_main - Entry point for the simple shell program
 *
 * Description: This function is the entry point for the shell program.
 *              It displays a prompt, reads user input, and executes commands.
