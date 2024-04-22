@@ -18,21 +18,21 @@
 #define BUF_FLUSH -1
 
 /* for command chaining */
-#define CMD_NORM	0
-#define CMD_OR		1
-#define CMD_AND		2
-#define CMD_CHAIN	3
+#define CMD_NORM        0
+#define CMD_OR          1
+#define CMD_AND         2
+#define CMD_CHAIN       3
 
 /* for convert_number() */
-#define CONVERT_LOWERCASE	1
-#define CONVERT_UNSIGNED	2
+#define CONVERT_LOWERCASE       1
+#define CONVERT_UNSIGNED        2
 
 /* 1 if using system getline() */
 #define USE_GETLINE 0
 #define USE_STRTOK 0
 
-#define HIST_FILE	".simple_shell_history"
-#define HIST_MAX	4096
+#define HIST_FILE       ".simple_shell_history"
+#define HIST_MAX        4096
 
 extern char **environ;
 
@@ -52,7 +52,7 @@ struct liststr *next;
 
 /**
 *struct passinfo - contains pseudo-arguements to pass into a function,
-*		allowing uniform prototype for function pointer struct
+*               allowing uniform prototype for function pointer struct
 *@arg: a string generated from getline containing arguements
 *@argv: an array of strings generated from arg
 *@path: a string path for the current command
@@ -149,11 +149,7 @@ char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
 
 /* toem_tokenizer.c */
-<<<<<<< HEAD
-char **strtow(char *, char *d);
-=======
 char **strtow(char *, char);
->>>>>>> 98eb9305d3c944cad2f85f8dd0a6720a81c5c60c
 char **strtow2(char *, char);
 
 /* toem_realloc.c */
