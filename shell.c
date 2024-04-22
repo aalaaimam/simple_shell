@@ -22,5 +22,5 @@ int main(void)
 
 /* Your code for the shell program */
 
-return 0; // Return 0 at the end of main
+return 0; /* Return 0 at the end of main */
 }
