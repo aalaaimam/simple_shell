@@ -13,7 +13,7 @@
 * Description: This function is the entry point for the shell program.
 *              It displays a prompt, reads user input, and executes commands.
 *
-* Return: Always returns 0 on success.
+* Return: Always returns 0 on success
 */
 int main(void)
 {
