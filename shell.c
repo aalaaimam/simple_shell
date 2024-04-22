@@ -18,7 +18,7 @@
 int main(void)
 {
 /*  Remove unused variable 'command' */
-// char command[MAX_COMMAND_LENGTH]; */
+/* char command[MAX_COMMAND_LENGTH]; */
 
 // Your code for the shell program
 
