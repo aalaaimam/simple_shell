@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stddef.h>
 #include <string.h>
-#include "shell.h"  // Include any necessary header files
+#include "shell.h"  /* Include any necessary header files */
 
 #define MAX_COMMAND_LENGTH 1024
 
