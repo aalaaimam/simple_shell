@@ -24,7 +24,7 @@ int i = 0;
 info->fname = av[0];
 if (info->arg)
 {
-info->argv = strtow(info->arg, ' ');
+info->argv = strtow(info->arg, " ");
 if (!info->argv)
 {
 info->argv = malloc(sizeof(char *) * 2);
