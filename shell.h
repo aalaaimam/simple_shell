@@ -150,10 +150,10 @@ char *_strchr(char *, char);
 
 /* toem_tokenizer.c */
 char **strtow(char *, char);
-char **strtow2(char *, char);
+char **strtow2(char *str, char *d);
 
 /* toem_realloc.c */
-char *_memset(char *, char, unsigned int);
+char *_memset(char *, char, unsigned in);
 void ffree(char **);
 void *_realloc(void *, unsigned int, unsigned int);
 
