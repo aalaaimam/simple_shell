@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stddef.h>
-#include <string.h>
-
-#define MAX_COMMAND_LENGTH 1024
+#include "shell.h"
 
 /**
 * main - Entry point for the simple shell program
@@ -12,7 +8,6 @@
 *
 * Return: Always returns 0 on success.
 */
-
 int main(void)
 {
 char command[MAX_COMMAND_LENGTH];
@@ -34,7 +29,6 @@ command[strlen(command) - 1] = '\0';
 }
 
 /* Your code to process the command goes here */
-
 }
 
 return (0);
