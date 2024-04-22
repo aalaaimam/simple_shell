@@ -149,11 +149,11 @@ char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
 
 /* toem_tokenizer.c */
-char **strtow(char *, char);
-char **strtow2(char *str, char *d);
+char **strtow(char *str, char *d);
+char **strtow2(char *str , char *d);
 
 /* toem_realloc.c */
-char *_memset(char *, char, unsigned in);
+char *_memset(char *, char, unsigned int);
 void ffree(char **);
 void *_realloc(void *, unsigned int, unsigned int);
 
