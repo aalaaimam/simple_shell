@@ -1,40 +1,41 @@
-i#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <stdio.h>
+#include <stddef.h>
+#include <string.h>
 
-#define MAX_COMMAND_LENGTH 100
+#define MAX_COMMAND_LENGTH 1024
 
-int main(void) {
+/**
+ * main - Entry point for the simple shell program
+ *
+ * Description: This function serves as the entry point for the simple shell program.
+ *              It displays a prompt, reads user input, and executes commands.
+ *
+ * Return: Always returns 0 on success.
+ */
+
+int main(void)
+{
 char command[MAX_COMMAND_LENGTH];
-pid_t pid;
-int status;
 
-while (1) {
+while (1)
+{
 printf("#cisfun$ ");
-if (fgets(command, MAX_COMMAND_LENGTH, stdin) == NULL) {
-printf("\n");
-break; // Exit if Ctrl+D (EOF) is pressed
+
+if (fgets(command, MAX_COMMAND_LENGTH, stdin) == NULL)
+{
+perror("fgets");
+return (1); /* Exit if Ctrl+D (EOF) is pressed */
 }
 
-// Replace '\n' with '\0' to remove the newline character
-if ((strlen(command) > 0) && (command[strlen(command) - 1] == '\n')) {
+/* Remove newline character if present */
+if ((strlen(command) > 0) && (command[strlen(command) - 1] == '\n'))
+{
 command[strlen(command) - 1] = '\0';
 }
 
-pid = fork();
-if (pid < 0) {
-perror("fork");
-exit(EXIT_FAILURE);
-} else if (pid == 0) { // Child process
-if (execlp(command, command, NULL) == -1) {
-perror("execlp");
-exit(EXIT_FAILURE);
-}
-} else { // Parent process
-wait(&status);
-}
+/* Your code to process the command goes here */
+
 }
 
-return EXIT_SUCCESS;
+return (0);
 }
