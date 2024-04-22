@@ -1,4 +1,4 @@
-// shell.c
+/* shell.c */
 
 #include <stdio.h>
 #include <stddef.h>
@@ -17,7 +17,10 @@
 */
 int main(void)
 {
-char command[MAX_COMMAND_LENGTH];
+// Remove unused variable 'command'
+// char command[MAX_COMMAND_LENGTH];
 
 // Your code for the shell program
+
+return 0; // Return 0 at the end of main
 }
