@@ -5,13 +5,13 @@
 #define MAX_COMMAND_LENGTH 1024
 
 /**
- * main - Entry point for the simple shell program
- *
- * Description: This function serves as the entry point for the simple shell program.
- *              It displays a prompt, reads user input, and executes commands.
- *
- * Return: Always returns 0 on success.
- */
+* main - Entry point for the simple shell program
+*
+* Description: This function is the entry point for the shell program.
+*              It displays a prompt, reads user input, and executes commands.
+*
+* Return: Always returns 0 on success.
+*/
 
 int main(void)
 {
